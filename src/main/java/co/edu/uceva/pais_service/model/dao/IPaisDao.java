@@ -1,5 +1,7 @@
 package co.edu.uceva.pais_service.model.dao;
 
-public interface IPaisDao extends CrudRepository{
+import org.springframework.data.repository.CrudRepository;
+
+public interface IPaisDao extends CrudRepository {
 
 }
