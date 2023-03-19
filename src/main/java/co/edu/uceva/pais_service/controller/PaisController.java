@@ -29,11 +29,8 @@ public class PaisController {
     @GetMapping("/paises")
     public List<Pais>listar(){
         List <Pais> paises= new ArrayList<>();
-        Pais pais1 = new Pais(1l,"Colombia");
-        Pais pais2 = new Pais(2l, "Ecuador");
-        paises.add(pais1);
-        paises.add(pais2);
+        return paisSevice.findAll();
 
-        return paises;
+
     }
 }
