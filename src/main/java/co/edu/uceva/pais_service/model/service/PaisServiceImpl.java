@@ -13,17 +13,17 @@ public class PaisServiceImpl implements IPaisSevice{
     IPaisDao paisDao;
     @Override
     public Pais save(Pais pais) {
-        return null;
+        return paisDao.save(pais);
     }
 
     @Override
     public void delete(Pais pais) {
-
+        paisDao.delete(pais);
     }
 
     @Override
     public Pais update(Pais pais) {
-        return null;
+        return paisDao.save(pais);
     }
 
     /**
@@ -37,6 +37,6 @@ public class PaisServiceImpl implements IPaisSevice{
 
     @Override
     public Pais findById(Long id) {
-        return null;
+        return paisDao.findById(id).get();
     }
 }
